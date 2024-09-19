@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Poem Generator</title>
     <link rel="stylesheet" href="src/index.css" />
@@ -10,20 +11,32 @@
   <body>
     <div class="container">
       <h1>French Poem Generator</h1>
-      <form>
-        <input
-          type="text"
-          id="search-form-input"
-          name="input"
-          value="Enter a word or two to describe the desired content of the poem..."
-        />
-        <input type="submit" id="search-form-button" value="Generate Poem" />
-      </form>
+      <div class="form-container">
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            id="search-form-input"
+            name="input"
+            placeholder="Enter a word or two to describe the desired content of the poem..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input
+            type="submit"
+            id="search-form-button"
+            class="submit-button"
+            value="Generate Poem"
+          />
+        </form>
+      </div>
       <div class="hint">i.e: Flower, Paris or Cheese</div>
-      <div class="form-answer"></div>
+      <div class="poem hidden" id="poem"></div>
       <footer>
         This AI project was coded by
-        <a href="https://github.com/matthieua/" target="_blank"
+        <a href="https://github.com/harkemaj/" target="_blank"
           >Jennie Harkema</a
         >
         and is
