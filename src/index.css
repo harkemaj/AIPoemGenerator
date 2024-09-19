@@ -44,7 +44,7 @@ header {
 .hint {
   font-size: 12px;
   color: #003049;
-  padding: 5px 0px 15px 20px;
+  padding: 5px 0px 25px 20px;
 }
 main {
   padding: 30px 0;
@@ -52,7 +52,7 @@ main {
 
 footer {
   border-top: 1px solid #eae2b7;
-  padding: 30px 0 0 0;
+  padding: 20px 0 0 0;
   text-align: center;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.6);
