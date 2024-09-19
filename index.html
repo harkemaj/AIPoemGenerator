@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Poem Generator</title>
+    <link rel="stylesheet" href="src/index.css"></style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>French Poem Generator</h1>
+      <form>  
+  <input type="text" id="search-form-input" name="fname" value="Enter a word or two to describe the desired content of the poem...">
+  <input type="submit" id="search-form-button"  value="Generate Poem">
+</form> <div class="hint">i.e: Flower, Paris or Cheese</div>
+<div class="form-answer"></div>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/matthieua/" target="_blank"
+          >Jennie Harkema</a
+        >
+        and is
+        <a href="https://github.com/harkemaj/AIPoemGenerator" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://aipracticesept.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
+
+    <script src="src/index.jsx"></script>
+  </body>
 </html>
