@@ -23,7 +23,7 @@ header {
   border-bottom: 1px solid #faf8fe;
   padding: 0 0 30px 0;
 }
-#search-form-input {
+.instructions {
   background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
